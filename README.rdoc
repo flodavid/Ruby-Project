@@ -1,7 +1,6 @@
 == README
 Utilise :
-+ ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-linux]
-et ruby 2.2.3p173 (2015-08-18 revision 51636) [x64-mingw32]
++ ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux] et [x64-mingw32]
 + rake	10.5.0
 + rails	4.2.5.1
 + rspec	3.4.2
