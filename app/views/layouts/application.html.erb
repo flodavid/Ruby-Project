@@ -3,14 +3,26 @@
   <head>
     <title><%= title %></title>
     <%= csrf_meta_tag %>
-	<! Stylesheets >
-    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+
+	<!-- STYLESHEETS : -->
+	<%= render 'layouts/stylesheets' %>
 
 <!--    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
 
   </head>
   <body>
-    <%= yield %>
+    <div class="container">
+		<!-- HEADER : -->
+		<%= render 'layouts/header' %>
+
+      <section class="round">
+        <%= yield %>
+      </section>
+
+		<!-- FOOTER : -->
+		 <%= render 'layouts/footer' %>
+
+    </div>
   </body>
 </html>
+

@@ -1,5 +1,8 @@
 == README
 
+( "require rails_helper" au lieu de "require spec_helper" dans les fichiers de tests ???)
+("RSpec.describe "LayoutLinks", type: :request do" au début des fichiers test ???)
+
 Things you may want to cover:
 
 * System dependencies
@@ -32,6 +35,8 @@ Things you may want to cover:
 ## Chapitre 4 :
 	Fichier "example_user.rb" crée pour le chapitre 4, inutile au projet.
 
+## Chapitre  :
+	Format du logo jpg au lieu de png.
 
 
 Please feel free to use a different markup language if you do not plan to run
