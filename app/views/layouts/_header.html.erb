@@ -1,0 +1,16 @@
+<header class="navbar navbar-inverse">
+    <div class="navbar-inner">
+     <div class="container">
+  <%= image_tag("logo.jpg", :alt => "Sample app", :class => "round") %>
+<!-- -->
+ <%= link_to "sample app", root_path, id: "logo" %> 
+	  <nav class="round">
+		<ul class="nav navbar-nav navbar-right">
+		  <li><%= link_to "Accueil",	root_path %></li>
+		  <li><%= link_to "Aide",		help_path %></li>
+		  <li><%= link_to "Connexion", '#' %></li>
+		</ul>
+	  </nav>
+    </div>
+  </div>
+</header>

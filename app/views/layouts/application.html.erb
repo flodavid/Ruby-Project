@@ -6,23 +6,23 @@
 
 	<!-- STYLESHEETS : -->
 	<%= render 'layouts/stylesheets' %>
-
 <!--    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
 
   </head>
   <body>
-    <div class="container">
-		<!-- HEADER : -->
-		<%= render 'layouts/header' %>
+			<!-- HEADER : -->
+			<%= render 'layouts/header' %>
 
-      <section class="round">
-        <%= yield %>
-      </section>
+		<div class="container">
 
-		<!-- FOOTER : -->
-		 <%= render 'layouts/footer' %>
+		  <section class="round">
+		    <%= yield %>
+		  </section>
 
-    </div>
+			<!-- FOOTER : -->
+			 <%= render 'layouts/footer' %>
+
+		</div>
   </body>
 </html>
 
