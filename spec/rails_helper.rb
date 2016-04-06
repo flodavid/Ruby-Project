@@ -54,4 +54,8 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+	# Add additional requires below this line. Rails is not loaded until this point!
+	require 'capybara/rails'
+	  config.include Capybara::DSL
 end

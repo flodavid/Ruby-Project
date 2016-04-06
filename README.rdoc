@@ -22,12 +22,13 @@ Things you may want to cover:
 * ...
 
 ## Chapitre 1 :
-### Versions : 
+### Versions :
 + ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux] et [x64-mingw32]
 + rake	10.5.0
 + rails	4.2.5.1
 + rspec	3.4.2
 + blueprint : v1.0.1-8
++ bootstrap
 
 ## Chapitre 3 :
 	Les tests correspondent à une version plus récente de rails par rapport au tutoriel. Ainsi, j'utilise "assert_response" et "assert_select" au lieu de "response.should be_success" (ou de "expect(response).to have_http_status(:success)") et de "response.should have_selector(...)". De plus j'ai utilise une variable "@base_title", définie à l'aide de "def setup" plutôt que "before(:each) do", cette variable est utilisée en interpolation plutôt qu'en utilisant une concaténation.
@@ -36,8 +37,10 @@ Things you may want to cover:
 	+ Fichier "example_user.rb" crée pour le chapitre 4, inutile au projet.
 
 ## Chapitre 5 :
-	+ Format du logo jpg au lieu de png.
+	+ Format du logo jpg au lieu de png et définition d'une variable logo.
 	+ Utilisation de la gem Bootstrap (boostrap-sass 3.3.6)
+	+ Utilisation de la gem capybara et "require 'capybara/rails' config.include
+			Capybara::DSL", ceci afin de pouvoir utiliser visit et have_title
 
 
 Please feel free to use a different markup language if you do not plan to run

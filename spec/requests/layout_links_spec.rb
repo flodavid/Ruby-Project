@@ -25,5 +25,25 @@ RSpec.describe "LayoutLinks", type: :request do
 		expect(response.body).to include("Aide</title>")
 	  end
 
+	  it "should find a Help webpage at '/signup'" do
+		get '/signup'
+		expect(response.body).to include("Inscription</title>")
+	  end
+
+	# Tests de vérification du bon fonctionnement des liens
+		it "should have the right link on the layout" do
+			visit root_path
+			click_link "À Propos"
+            expect(page).to have_title "À Propos"
+			click_link "Aide"
+		    expect(page).to have_title "Aide"
+			click_link "Contact"
+            expect(page).to have_title "Contact"
+			click_link "Accueil"
+		    expect(page).to have_title "Accueil"
+			click_link "S'inscrire !"
+			expect(page).to have_title "Inscription"
+    end
+
   end
 end
