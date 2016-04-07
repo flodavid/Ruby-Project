@@ -31,7 +31,7 @@ Things you may want to cover:
 + bootstrap
 
 ## Chapitre 3 :
-	Les tests correspondent à une version plus récente de rails par rapport au tutoriel. 
+	Les tests correspondent à une version plus récente de rails par rapport au tutoriel.
     Ainsi, j'utilise "assert_response" et "assert_select" au lieu de "response.should be_success"
     (ou de "expect(response).to have_http_status(:success)") et de "response.should have_selector(...)".
     De plus j'ai utilise une variable "@base_title", définie à l'aide de "def setup",
@@ -52,11 +52,12 @@ Things you may want to cover:
 	je n'ai pas réussi à utiliser 'annotate' dans le terminal.
     + Ajout d'un 'password' et création des test correspondants (taille et non vide)
     + Utilisation de la gem bcrypt pour le hash de mots de passe
-    
+		??? ++ L'utilisation de "has_secure_password" dans user aurait évité de nombreux tests
+
 ## Chapitre 7 :
     + Utilisation des versions 4.5.0 et 4.6.0 des gems factory_girl et factory_girl_rails
-    + Au vu de l'utilisation de versions récentes de FactoryGirl, il a fallut utiliser 
-    "FactoryGirl.define do" dans factories.rb et "FactoryGirl.create(:user)" dans les tests 'user'  
+    + Au vu de l'utilisation de versions récentes de FactoryGirl, il a fallut utiliser
+    "FactoryGirl.define do" dans factories.rb et "FactoryGirl.create(:user)" dans les tests 'user'
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
