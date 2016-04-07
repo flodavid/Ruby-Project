@@ -51,6 +51,7 @@ end
 # Added to test with rspec
 group :development do
   gem 'rspec-rails'
+  gem 'annotate_models', '0.0.4'
 end
 
 group :test do

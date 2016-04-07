@@ -42,6 +42,9 @@ Things you may want to cover:
 	+ Utilisation de la gem capybara et "require 'capybara/rails' config.include
 			Capybara::DSL", ceci afin de pouvoir utiliser visit et have_title
 
+## Chapitre 6 :
+	+ Gem annotate-models n'existe pas, utilisation de la gem annotate_models (0.0.4),
+	je n'ai pas réussi à utiliser 'annotate' dans le terminal.
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
