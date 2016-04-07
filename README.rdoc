@@ -35,7 +35,8 @@ Things you may want to cover:
     Ainsi, j'utilise "assert_response" et "assert_select" au lieu de "response.should be_success"
     (ou de "expect(response).to have_http_status(:success)") et de "response.should have_selector(...)".
     De plus j'ai utilise une variable "@base_title", définie à l'aide de "def setup",
-    plutôt que "before(:each) do", cette variable est utilisée en interpolation à la place d'une concaténation.
+    plutôt que "before(:each) do", cette variable est utilisée en interpolation
+    en lieu et place d'une concaténation.
 
 ## Chapitre 4 :
 	+ Fichier "example_user.rb" crée pour le chapitre 4, inutile au projet.
@@ -51,6 +52,11 @@ Things you may want to cover:
 	je n'ai pas réussi à utiliser 'annotate' dans le terminal.
     + Ajout d'un 'password' et création des test correspondants (taille et non vide)
     + Utilisation de la gem bcrypt pour le hash de mots de passe
+    
+## Chapitre 7 :
+    + Utilisation des versions 4.5.0 et 4.6.0 des gems factory_girl et factory_girl_rails
+    + Au vu de l'utilisation de versions récentes de FactoryGirl, il a fallut utiliser 
+    "FactoryGirl.define do" dans factories.rb et "FactoryGirl.create(:user)" dans les tests 'user'  
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
