@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
+# Avatar
+gem 'gravatar_image_tag', '1.2.0'
+# For secure password
+gem 'bcrypt', '3.1.11'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -57,4 +61,7 @@ end
 group :test do
   gem 'rspec'
   gem 'webrat'
+  gem 'factory_girl_rails', '4.6.0'
+  gem 'factory_girl', '4.5.0'
+
 end
