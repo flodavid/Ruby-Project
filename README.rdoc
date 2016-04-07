@@ -59,5 +59,9 @@ Things you may want to cover:
     + Au vu de l'utilisation de versions récentes de FactoryGirl, il a fallut utiliser
     "FactoryGirl.define do" dans factories.rb et "FactoryGirl.create(:user)" dans les tests 'user'
 
+## Chapitre 8 :
+		+ Parties html différentes et ajout de css afin d'utiliser bootstrap
+		+ Création et utilisation d'une méthode "def user_params"
+
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
