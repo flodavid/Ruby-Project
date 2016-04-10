@@ -12,12 +12,12 @@ home :: https://github.com/flodavid/Ruby-project
 * bootstrap
 
 == Chapitre 3 :
-	Les tests correspondent à une version plus récente de rails par rapport au tutoriel.
-    Ainsi, j'utilise "assert_response" et "assert_select" au lieu de "response.should be_success"
-    (ou de "expect(response).to have_http_status(:success)") et de "response.should have_selector(...)".
-    De plus j'ai utilise une variable "@base_title", définie à l'aide de "def setup",
-    plutôt que "before(:each) do", cette variable est utilisée en interpolation
-    en lieu et place d'une concaténation.
+Les tests correspondent à une version plus récente de rails par rapport au tutoriel.
+Ainsi, j'utilise "assert_response" et "assert_select" au lieu de "response.should be_success"
+(ou de "expect(response).to have_http_status(:success)") et de "response.should have_selector(...)".
+De plus j'ai utilise une variable "@base_title", définie à l'aide de "def setup",
+plutôt que "before(:each) do", cette variable est utilisée en interpolation
+en lieu et place d'une concaténation.
 
 == Chapitre 4 :
 * Fichier "example_user.rb" crée pour le chapitre 4, inutile au projet.
