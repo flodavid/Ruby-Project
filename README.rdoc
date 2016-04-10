@@ -4,12 +4,12 @@ home :: https://github.com/flodavid/Ruby-project
 
 == Chapitre 1 :
 === Versions :
-+ ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux] et [x64-mingw32]
-+ rake	10.5.0
-+ rails	4.2.5.1
-+ rspec	3.4.2
-+ blueprint : v1.0.1-8
-+ bootstrap
+* ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux] et [x64-mingw32]
+* rake	10.5.0
+* rails	4.2.5.1
+* rspec	3.4.2
+* blueprint : v1.0.1-8
+* bootstrap
 
 == Chapitre 3 :
 	Les tests correspondent à une version plus récente de rails par rapport au tutoriel.
@@ -20,36 +20,36 @@ home :: https://github.com/flodavid/Ruby-project
     en lieu et place d'une concaténation.
 
 == Chapitre 4 :
-	+ Fichier "example_user.rb" crée pour le chapitre 4, inutile au projet.
+	* Fichier "example_user.rb" crée pour le chapitre 4, inutile au projet.
 
 == Chapitre 5 :
-	+ Format du logo jpg au lieu de png et définition d'une variable logo.
-	+ Utilisation de la gem Bootstrap (boostrap-sass 3.3.6)
-	+ Utilisation de la gem capybara et "require 'capybara/rails' config.include
+	* Format du logo jpg au lieu de png et définition d'une variable logo.
+	* Utilisation de la gem Bootstrap (boostrap-sass 3.3.6)
+	* Utilisation de la gem capybara et "require 'capybara/rails' config.include
 			Capybara::DSL", ceci afin de pouvoir utiliser visit et have_title
 
 == Chapitre 6 :
-	+ Gem annotate-models n'existe pas, utilisation de la gem annotate_models (0.0.4),
+	* Gem annotate-models n'existe pas, utilisation de la gem annotate_models (0.0.4),
 	je n'ai pas réussi à utiliser 'annotate' dans le terminal.
-    + Ajout d'un 'password' et création des test correspondants (taille et non vide)
-    + Utilisation de la gem bcrypt pour le hash de mots de passe
-		??? ++ L'utilisation de "has_secure_password" dans user aurait évité de nombreux tests
+    * Ajout d'un 'password' et création des test correspondants (taille et non vide)
+    * Utilisation de la gem bcrypt pour le hash de mots de passe
+		??? ** L'utilisation de "has_secure_password" dans user aurait évité de nombreux tests
 
 == Chapitre 7 :
-    + Utilisation des versions 4.5.0 et 4.6.0 des gems factory_girl et factory_girl_rails
-    + Au vu de l'utilisation de versions récentes de FactoryGirl, il a fallut utiliser
+    * Utilisation des versions 4.5.0 et 4.6.0 des gems factory_girl et factory_girl_rails
+    * Au vu de l'utilisation de versions récentes de FactoryGirl, il a fallut utiliser
     "FactoryGirl.define do" dans factories.rb et "FactoryGirl.create(:user)" dans les tests 'user'
 
 == Chapitre 8 :
-		+ Parties html différentes et ajout de css afin d'utiliser bootstrap
-		+ Création et utilisation d'une méthode "def user_params"
+		* Parties html différentes et ajout de css afin d'utiliser bootstrap
+		* Création et utilisation d'une méthode "def user_params"
 
 == Ajouts :
-	+ Utilisation de Bootstrap pour la mise en page.
-	+ Les pages sont valides XHTML et
-	+ Ajout du lien vers le validateurs W3C (nécessite que le site soit déployé sur un serveur web)
-	+ Ajout d'un lien permettant de m'envoyer un e-mail sur la page Contact
-    + Ajout d'un lien vers ma page de projet Github sur la page A propos
+	* Utilisation de Bootstrap pour la mise en page.
+	* Les pages sont valides XHTML et
+	* Ajout du lien vers le validateurs W3C (nécessite que le site soit déployé sur un serveur web)
+	* Ajout d'un lien permettant de m'envoyer un e-mail sur la page Contact
+    * Ajout d'un lien vers ma page de projet Github sur la page A propos
 
 
 
