@@ -1,6 +1,6 @@
 = Projet d'un site avec Ruby On Rails
 
-home :: https://github.com/flodavid/Ruby-project
+Accueil du projet :: https://github.com/flodavid/Ruby-project
 
 == Chapitre 1 :
 === Versions :

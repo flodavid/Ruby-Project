@@ -85,7 +85,7 @@ RSpec.describe UsersController, type: :controller do
 	      it "should create new user" do
 	        lambda do
 	          	post :create, :user => @attr
-	        end.should change(User, :count).by(1)
+	        end.should  change(User, :count).by(1)
 	      end
 
 	      it "should redirect to user's page" do
@@ -93,9 +93,9 @@ RSpec.describe UsersController, type: :controller do
 	        expect(response).to redirect_to(user_path(assigns(:user)))
 	      end
 
-				it "devrait avoir un message de bienvenue" do
+          it "should have a welcome message" do
 	        post :create, :user => @attr
-	        expect(flash[:success]).to =~ /Bienvenue dans l'Application Exemple/i
+	        expect(flash[:success]).to be =~ /Bienvenue dans l'Application Exemple/i
 	      end
 
 	    end # fin describe success
