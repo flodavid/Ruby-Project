@@ -63,5 +63,13 @@ Things you may want to cover:
 		+ Parties html différentes et ajout de css afin d'utiliser bootstrap
 		+ Création et utilisation d'une méthode "def user_params"
 
+
+## Ajouts :
+	+ Utilisation de Bootstrap pour la mise en page.
+	+ Les pages sont valides XHTML et
+	+ Ajout du lien vers le validateurs W3C (nécessite que le site soit déployé sur un serveur web)
+	+ Ajout d'un lien permettant de m'envoyer un e-mail sur la page Contact
+
+
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
