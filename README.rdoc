@@ -15,6 +15,7 @@ home :: https://github.com/flodavid/Ruby-project
 Les tests correspondent à une version plus récente de rails par rapport au tutoriel.
 Ainsi, j'utilise "assert_response" et "assert_select" au lieu de "response.should be_success"
 (ou de "expect(response).to have_http_status(:success)") et de "response.should have_selector(...)".
+
 De plus j'ai utilise une variable "@base_title", définie à l'aide de "def setup",
 plutôt que "before(:each) do", cette variable est utilisée en interpolation
 en lieu et place d'une concaténation.
@@ -34,7 +35,7 @@ ceci afin de pouvoir utiliser visit et have_title
 je n'ai pas réussi à utiliser 'annotate' dans le terminal.
 * Ajout d'un 'password' et création des test correspondants (taille et non vide)
 * Utilisation de la gem bcrypt pour le hash de mots de passe
-		??? ** L'utilisation de "has_secure_password" dans user aurait évité de nombreux tests
+A Voir :: ??? ** L'utilisation de "has_secure_password" dans user aurait évité de nombreux tests
 
 == Chapitre 7 :
 * Utilisation des versions 4.5.0 et 4.6.0 des gems factory_girl et factory_girl_rails
@@ -54,9 +55,8 @@ je n'ai pas réussi à utiliser 'annotate' dans le terminal.
 
 
 
-( "require rails_helper" au lieu de "require spec_helper" dans les fichiers de tests ???)
-("RSpec.describe "LayoutLinks", type: :request do" au début des fichiers test ???)
-
+A Voir  :: ( "require rails_helper" au lieu de "require spec_helper" dans les fichiers de tests ???)
+A Voir  :: ("RSpec.describe "LayoutLinks", type: :request do" au début des fichiers test ???) 
 Things you may want to cover:
 
 * System dependencies
