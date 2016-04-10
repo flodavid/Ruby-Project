@@ -45,6 +45,11 @@ A Voir :: ??? ** L'utilisation de "has_secure_password" dans user aurait évité
 == Chapitre 8 :
 * Parties html différentes et ajout de css afin d'utiliser bootstrap
 * Création et utilisation d'une méthode "def user_params"
+* Modifications faites au niveau des tests d'intégration RSpec, de nombreuses méthodes 
+étaient "deprecated", j'ai donc du adapter. J'ai tout de même utilisé 
+    end.should not_to ...
+car ne pas utiliser should dans ce cas entrainait de trops nombreux changements, ne pouvant
+pas simplement remplacer par 'expect' dans ce cas-ci
 
 == Ajouts :
 * Utilisation de Bootstrap pour la mise en page.
