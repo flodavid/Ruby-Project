@@ -1,6 +1,7 @@
 = Projet d'un site avec Ruby On Rails
 
 Accueil du projet :: https://github.com/flodavid/Ruby-project
+Etat du projet  :: {<img src="https://codeclimate.com/github/flodavid/Ruby-Project/badges/gpa.svg" />}[https://codeclimate.com/github/flodavid/Ruby-Project]
 
 == Chapitre 1 :
 === Versions :
