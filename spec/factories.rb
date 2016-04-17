@@ -2,8 +2,8 @@
 # Factory Girl simule un modèle User.
 FactoryGirl.define do
     factory :user do |user|
-        user.nom                  "Michael Hartl"
-        user.email                 "mhartl@example.com"
+        user.nom                  "Florian DAViD"
+        user.email                 "foomail@example.com"
         user.password              "foobar"
         user.password_confirmation "foobar"
     end

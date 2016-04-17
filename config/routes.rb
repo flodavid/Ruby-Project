@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
+#  get 'sessions/new'
+
   resources :users
-#	resources :session, :only => [:new, :create, :destroy]
+  resources :session, :only => [:new, :create, :destroy]
 
   match '/signup',  to: 'users#new', 	via: 'get'
+  
+  get    'signin'   => 'sessions#new'
+  post   'signin'   => 'sessions#create'
+  delete  'signout'  => 'sessions#destroy'
+  
+  #match '/signin',  to: 'sessions#new', via: 'get'
+  #match '/signin',  to: 'sessions#create', via: 'post'
+  #match '/signout', to: 'sessions#destroy', via: 'delete'
 
   match '/contact', to: 'pages#contact', via: 'get'
   match '/about',   to: 'pages#about',   via: 'get'

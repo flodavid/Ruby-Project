@@ -8,7 +8,7 @@ RSpec.describe "Users", type: :request do
     #     end
     # end
 
-    describe "an inscription" do
+    describe "signup" do
 
         describe "failure" do
 
@@ -42,8 +42,36 @@ RSpec.describe "Users", type: :request do
                                                     
                     #expect(response).to render_template('users/show')
                 end.should change(User, :count).by(1)
-            end #fin create new user
+            end #fin it should create new user
         end # fin success
         
-    end # fin une inscription  
+    end # fin signup
+    
+    describe "login/logout" do
+    
+		describe "failure" do
+        
+			it "should not identify the user" do
+				visit signin_path
+				fill_in "session_email",    :with => ""
+				fill_in "session_password", :with => ""
+				click_button "S'identifier"
+				expect(response).to have_selector("div.alert.alert-error", :content => "invalide.")
+			end
+		end # fin failure
+
+		describe "success" do
+        
+			it "should identify then disconnect the user" do
+				user = FactoryGirl.create(:user)
+				visit signin_path
+				fill_in "session_email",    :with => user.email
+				fill_in "session_password", :with => user.password
+				click_button "S'identifier"
+				expect(controller).to be_signed_in
+				click_link "Déconnexion"
+                expect(controller).not_to be_signed_in
+			end
+		end # fin success
+    end # fin login/logout
 end

@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<!--PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" -->
+<html  lang="en" > <!-- xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"-->
   <head>
     <title><%= title %></title>
     <%= csrf_meta_tag %>
 
 	<!-- STYLESHEETS : -->
-  <%= stylesheet_link_tag    'application', media: 'all',
-                                          'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application', 'type' => 'text/javascript'%>
 
 
   </head>
@@ -16,7 +16,7 @@
 			<%= render 'layouts/header' %>
 
       <div class="container">
-          <section class="round">
+          <section>
               <% flash.each do |message_type, message| %>
                 <div class="alert alert-<%= message_type %>"><%= message %></div>
               <% end %>

@@ -88,6 +88,11 @@ RSpec.describe UsersController, type: :controller do
 	        end.should  change(User, :count).by(1)
 	      end
 
+          it "shoudl identify user" do
+            post :create, :user => @attr
+            expect(controller).to be_signed_in
+          end
+
 	      it "should redirect to user's page" do
 	        post :create, :user => @attr
 	        expect(response).to redirect_to(user_path(assigns(:user)))

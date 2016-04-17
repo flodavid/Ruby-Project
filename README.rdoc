@@ -52,6 +52,13 @@ A Voir :: ??? ** L'utilisation de "has_secure_password" dans user aurait évité
 car ne pas utiliser should dans ce cas entrainait de trops nombreux changements, ne pouvant
 pas simplement remplacer par 'expect' dans ce cas-ci
 
+== Chapitre 9 :
+* Le fichiers 'routes.rb' étant définit différement - j'utilise via ... -, j'ai dû adapter
+les "routes", j'ai donc une route 'signin' avec 'get' et une autre avec 'post', pour
+l'affichage de la page de connexion et la requête de connexion.
+* Ajout de  "//= require bootstrap" dans le fichier 'app/assets/javascripts/application.js'
+
+
 == Ajouts :
 * Utilisation de Bootstrap pour la mise en page.
 * Les pages sont valides XHTML et
@@ -60,9 +67,18 @@ pas simplement remplacer par 'expect' dans ce cas-ci
 * Ajout d'un lien vers ma page de projet Github sur la page A propos
 
 
+== Autres 
+* Toutes les pages sont valides HTML5, j'ai utilisé le validateur W3C pour les vérifier.
+En revanche, elles ne sont pas valides XHTML 1.0. En effet, bootstrap s'appuie sur certaines balises
+HTML5 (header, footer, nav, ...), puisque c'était ma première utilisation de bootstrap, je ne savais
+pas comment concilier les deux (simplement). De plus, le code HTML généré par rails contient parfois
+certaines propriétés propres au HTML5, des attributs 'data-...' par exemple et je ne savais pas non
+plus comment empêcher leur utilisation. J'ai donc choisi de mettre en commentaire la mention XHTML 1.0
+dans le fichier 'app/views/layouts/application.html.erb'.
 
 A Voir  :: ( "require rails_helper" au lieu de "require spec_helper" dans les fichiers de tests ???)
-A Voir  :: ("RSpec.describe "LayoutLinks", type: :request do" au début des fichiers test ???) 
+A Voir  :: ("RSpec.describe "LayoutLinks", type: :request do" au début des fichiers test ???)
+
 Things you may want to cover:
 
 * System dependencies
